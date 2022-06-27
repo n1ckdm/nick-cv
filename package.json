@@ -1,6 +1,6 @@
 {
   "name": "nick-cv",
-  "version": "1",
+  "version": "1.0.0",
   "description": "A static data library containing my CV",
   "main": "lib/index.js",
   "scripts": {
