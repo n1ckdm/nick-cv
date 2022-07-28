@@ -1,3 +1,3 @@
 # nick-cv
 
-npm package for my cv
+deno module for my cv
