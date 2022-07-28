@@ -1,25 +1,31 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
-
 name: nick-cv
 
-on:
-  release:
-    types: [created]
+on: [push, pull_request]
 
 jobs:
-  publish-npm:
-    needs: build
+  build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        deno: [0.32.0, 0.31.0, 0.30.0]
+    name: Test with Deno ${{ matrix.deno }}
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@master
+
+      - name: Setup Deno
+        uses: denolib/setup-deno@master
         with:
-          node-version: 14.x
-          registry-url: https://registry.npmjs.org/
-      - name: Install dependencies and build 🔧
-      - run: npm install && npm run build
-      - name: Publish package on NPM 📦
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_SECRET}}
+          deno-version: ${{ matrix.deno }}
+
+      - name: Setup Node
+        uses: actions/setup-node@master
+        with:
+          node-version: 12
+
+      - name: Print deno version
+        run: deno --version
+
+      - name: Check format
+        run: deno fmt --check **/*.ts

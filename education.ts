@@ -1,19 +1,19 @@
-interface Education {
-  institution: String;
-  subject: String;
-  level: String;
-  grade: String;
-  startDate: String;
-  finishDate: String;
+interface education {
+  institution: string;
+  subject: string;
+  level: string;
+  grade: string;
+  startDate: string;
+  finishDate: string;
 }
 
-export const awards: String[] = [
+export const awards: string[] = [
   "Fellow of the Higher Education Academy",
   "Royal Aeronautical Society Cody Prize",
   "University of Surrey Hector Wainwright Prize",
 ];
 
-export const eductaion: Education[] = [
+export const eductaion: education[] = [
   {
     institution: "Tauntons College",
     subject: "Mathematics, Physics, Electonics",

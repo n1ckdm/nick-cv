@@ -1,10 +1,10 @@
-interface Publication {
-  journal: String;
-  title: String;
-  year: Number;
+interface publication {
+  journal: string;
+  title: string;
+  year: number;
 }
 
-export const publications: Publication[] = [
+export const publications: publication[] = [
   {
     journal: "Journal of Aerospace Engineering",
     title: "Experimental Flow Control Using Synthetic Jet Actuators",

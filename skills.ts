@@ -1,9 +1,9 @@
-interface Skill {
-  name: String;
-  score: Number;
+interface skill {
+  name: string;
+  score: number;
 }
 
-export const skills: Skill[] = [
+export const skills: skill[] = [
   { name: "Wind Tunnel Testing", score: 5 },
   { name: "Aerodynamics", score: 5 },
   { name: "Fluid Dynamics", score: 4 },
@@ -19,7 +19,7 @@ export const skills: Skill[] = [
   { name: "Frontend Software Development", score: 3 },
 ];
 
-export const languages: Skill[] = [
+export const languages: skill[] = [
   { name: "Python", score: 5 },
   { name: "C#", score: 4 },
   { name: "C++", score: 3 },

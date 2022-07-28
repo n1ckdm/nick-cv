@@ -1,12 +1,12 @@
-interface Work {
-  company: String;
-  role: String;
-  startDate: String;
-  finishDate: String | null;
-  description: String;
+interface work {
+  company: string;
+  role: string;
+  startDate: string;
+  finishDate: string | null;
+  description: string;
 }
 
-export const work: Work[] = [
+export const work: work[] = [
   {
     company: "Toyota Motorsport Gmbh",
     role: "Junior Aerodynamicist",
