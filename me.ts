@@ -16,6 +16,7 @@ interface Social {
   github: string;
   linkedIn: string;
   twitter: string;
+  dev: string;
 }
 
 export const me: Me = {
@@ -36,4 +37,5 @@ export const social: Social = {
   github: "https://github.com/n1ckdm",
   twitter: "https://twitter.com/ND_Martin",
   linkedIn: "https://www.linkedin.com/in/dr-nick-martin/",
+  dev: "https://dev.to/n1ckdm",
 };
