@@ -1,19 +1,21 @@
 interface Me {
-  firstName: String;
-  middleName: String;
-  lastName: String;
-  prefferedName: String;
-  email: String;
-  town: String;
-  city: String;
-  postCode: String;
-  bio: String;
+  firstName: string;
+  middleName: string;
+  lastName: string;
+  prefferedName: string;
+  pronouns: string;
+  email: string;
+  town: string;
+  city: string;
+  postCode: string;
+  bio: string;
+  country: string;
 }
 
 interface Social {
-  github: String;
-  linkedIn: String;
-  twitter: String;
+  github: string;
+  linkedIn: string;
+  twitter: string;
 }
 
 export const me: Me = {
@@ -21,10 +23,12 @@ export const me: Me = {
   middleName: "David",
   lastName: "Martin",
   prefferedName: "Nick",
+  pronouns: "he/him",
   email: "me@nickdmartin.com",
   town: "North Shields",
   city: "Newcastle upon Tyne",
   postCode: "NE29 6TA",
+  country: "UK",
   bio: "I enjoy being outdoors and being active. I am a keen cyclist, runner and dinghy sailor and like nothing more that walking around the Northumberland coastline and countryside. I also like to take my progamming interests home with me, I like playing with robotics, analysing data and creating interesting visualisations. I'm a very amateur pianist.",
 };
 
