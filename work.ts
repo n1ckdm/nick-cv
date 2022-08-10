@@ -45,6 +45,6 @@ export const work: work[] = [
     startDate: "03/2019",
     finishDate: null,
     description:
-      "Leading the software architecture and development of Smart Machine and Robotics systems. Building a team culture that allows excellent, high performaing individuals to work together to produce inovative software solutions. Helping people within the team achieve their goals and career asparations.",
+      "Leading the software architecture and development of Smart Machine and Robotics systems. Building a team culture that allows excellent, high performing individuals to work together to produce innovative software solutions. Helping people within the team achieve their goals and career aspirations.",
   },
 ];
