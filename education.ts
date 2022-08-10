@@ -13,10 +13,10 @@ export const awards: string[] = [
   "University of Surrey Hector Wainwright Prize",
 ];
 
-export const eductaion: education[] = [
+export const education: education[] = [
   {
     institution: "Tauntons College",
-    subject: "Mathematics, Physics, Electonics",
+    subject: "Mathematics, Physics, Electronics",
     level: "A-Level",
     grade: "BBC",
     startDate: "09/2003",

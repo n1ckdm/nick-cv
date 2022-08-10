@@ -2,7 +2,7 @@ interface Me {
   firstName: string;
   middleName: string;
   lastName: string;
-  prefferedName: string;
+  preferredName: string;
   pronouns: string;
   email: string;
   town: string;
@@ -23,14 +23,14 @@ export const me: Me = {
   firstName: "Nicholas",
   middleName: "David",
   lastName: "Martin",
-  prefferedName: "Nick",
+  preferredName: "Nick",
   pronouns: "he/him",
   email: "me@nickdmartin.com",
   town: "North Shields",
   city: "Newcastle upon Tyne",
   postCode: "NE29 6TA",
   country: "UK",
-  bio: "I enjoy being outdoors and being active. I am a keen cyclist, runner and dinghy sailor and like nothing more that walking around the Northumberland coastline and countryside. I also like to take my progamming interests home with me, I like playing with robotics, analysing data and creating interesting visualisations. I'm a very amateur pianist.",
+  bio: "I enjoy being outdoors and being active. I am a keen cyclist, runner and dinghy sailor and like nothing more that walking around the Northumberland coastline and countryside. I also like to take my programming interests home with me, I like playing with robotics, analysing data and creating interesting visualisations. I'm a very amateur pianist.",
 };
 
 export const social: Social = {
